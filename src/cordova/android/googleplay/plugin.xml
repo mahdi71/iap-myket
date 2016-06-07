@@ -20,7 +20,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-            <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+            <uses-permission android:name="ir.mservices.market.BILLING" />
         </config-file>
 
     </platform>
