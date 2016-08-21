@@ -40,13 +40,7 @@ public class GooglePlayInAppService extends AbstractInAppService
             purchase.productId = jo.getString("productId");
             purchase.transactionId = jo.getString("purchaseToken");
             purchase.quantity = 1;
-            
-if (jo.has("purchaseState")) {
- purchase.purchaseState = jo.getInt("purchaseState");
- } else {
-purchase.purchaseState = 1;
- }
-            
+            purchase.purchaseState = jo.getInt("purchaseState");
             purchase.purchaseToken = jo.getString("purchaseToken");
             purchase.developerPayload = jo.optString("developerPayload");
             purchase.purchaseDate = new Date(jo.optLong("purchaseTime"));
